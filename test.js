@@ -1,3 +1,5 @@
+//NOW WITH ADDED GITHUB!
+
 //TOPBAR DROPDOWN MENUS
 var ids = {};
 var waitFactor = 100;
