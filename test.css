@@ -47,6 +47,9 @@ body {
 	border-radius: 0 0 5px 5px;
 	overflow: hidden;
 }
+.topBtnAndMenu:hover .topMenu {
+	height: auto;
+}
 .topMenuA {
 	text-decoration: none;
 	color: white;
