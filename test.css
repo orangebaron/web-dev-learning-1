@@ -3,7 +3,7 @@ body {
 }
 
 .topBar {
-	background-color: #808080;
+	background-color: #4CAF50;
 	height: 30pt;
 	position: fixed;
 	top: 0;
@@ -16,32 +16,56 @@ body {
 	top: 2pt;
 	vertical-align: top;
 	border-radius: 5px;
-	font-size: 20pt;
-	text-align: center;
 }
-.topBtnA{
-	text-decoration: none;
-	color: white;
-}
-.topBtnDiv {
-	padding-left: 1.25pc;
-	padding-right: 1.25pc;
-	background-color: black;
-	height: 80%;
+.topBtnBtn {
+	border: none;
+	background-color: #F4511E;
+	height: 24pt;
 	cursor: pointer;
 	border-radius: 5px;
 	transition: background-color .5s;
+	box-shadow: 0 2pt black;
+	width: 100pt;
 }
-.topBtnDiv:hover {
-	background-color: #909090;
+.topBtnBtn:hover {
+	background-color: #D43100;
+}
+.topBtnBtn:active{
+	transform: translateY(2pt);
+	box-shadow: 0 0;
 }
 .topBtnSpan {
 	vertical-align: middle;
+	margin: 5px 5px 5px 5px;
+	font-size: 20pt;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	padding-right: 0;
+	transition: .5s padding-right;
+}
+.topBtnSpan:after {
+	content: '>';
+	font-size: 20pt;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	position: absolute;
+	top: 0;
+	right: 20px;
+	opacity: 0;
+	transition: .5s;
+}
+.topBtnBtn:hover .topBtnSpan:after {
+	opacity: 1;
+}
+.topBtnBtn:hover .topBtnSpan {
+	padding-right: 15pt;
 }
 .topMenu {
 	position: relative;
-	top: 2.5pt;
-	background-color: #808080;
+	top: 4pt;
+	background-color: #4CAF50;
 	display: block;
 	height: 0;
 	border-radius: 0 0 5px 5px;
@@ -55,9 +79,13 @@ body {
 	color: white;
 	transition: background-color .5s;
 	display: block;
+	font-size: 20pt;
+	text-align: center;
+	text-decoration: none;
+	color: white;
 }
 .topMenuA:hover {
-	background-color: #a0a0a0;
+	background-color: #6CCF70;
 }
 
 .mainDiv {
