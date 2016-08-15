@@ -1,4 +1,4 @@
-body {
+﻿body {
 	margin: 0 0 0 0;
 }
 
@@ -45,7 +45,7 @@ body {
 	transition: .5s padding-right;
 }
 .topBtnSpan:after {
-	content: '>';
+	content: "»";
 	font-size: 20pt;
 	text-align: center;
 	text-decoration: none;
@@ -83,9 +83,25 @@ body {
 	text-align: center;
 	text-decoration: none;
 	color: white;
+	transition: .5s;
+}
+.topMenuA:after {
+	content: "»";
+	font-size: 20pt;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	position: absolute;
+	right: 20px;
+	opacity: 0;
+	transition: .5s;
 }
 .topMenuA:hover {
 	background-color: #6CCF70;
+	padding-right: 15pt;
+}
+.topMenuA:hover:after {
+	opacity: 1;
 }
 
 .mainDiv {
